@@ -1,0 +1,43 @@
+2017-09-23T05:56:21.540+0200 I CONTROL  [main] Trying to start Windows service 'MongoS'
+2017-09-23T05:56:21.542+0200 I SHARDING [mongosMain] mongos version v3.4.9
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] allocator: tcmalloc
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] modules: none
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] build environment:
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain]     distmod: 2008plus
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain]     distarch: x86_64
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain]     target_arch: x86_64
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] db version v3.4.9
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] allocator: tcmalloc
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] modules: none
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] build environment:
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain]     distmod: 2008plus
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain]     distarch: x86_64
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain]     target_arch: x86_64
+2017-09-23T05:56:21.542+0200 I CONTROL  [mongosMain] options: { config: "C:\Program Files\MongoDB\Server\3.4\mongos.cfg", security: { keyFile: "C:\Program Files\MongoDB\Server\3.4\x509.key" }, service: true, sharding: { configDB: "rs1/ELVN-LAP02:27019" }, systemLog: { destination: "file", path: "c:\data\log\mongos.log" } }
+2017-09-23T05:56:21.544+0200 I NETWORK  [mongosMain] Starting new replica set monitor for rs1/ELVN-LAP02:27019
+2017-09-23T05:56:21.545+0200 I SHARDING [thread1] creating distributed lock ping thread for process ShardServer2:27017:1506138981:-8042188477005221246 (sleeping for 30000ms)
+2017-09-23T05:56:21.561+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to ELVN-LAP02:27019 (1 connections now open to ELVN-LAP02:27019 with a 5 second timeout)
+2017-09-23T05:56:21.562+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:56:21.565+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ELVN-LAP02:27019, took 3ms (1 connections now open to ELVN-LAP02:27019)
+2017-09-23T05:56:21.568+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:56:21.568+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:56:21.572+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ELVN-LAP02:27019, took 4ms (3 connections now open to ELVN-LAP02:27019)
+2017-09-23T05:56:21.573+0200 I NETWORK  [shard registry reload] Starting new replica set monitor for rs2/ShardServer2:27018
+2017-09-23T05:56:21.574+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ELVN-LAP02:27019, took 6ms (3 connections now open to ELVN-LAP02:27019)
+2017-09-23T05:56:21.574+0200 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2017-09-23T05:56:21.592+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to ShardServer2:27018 (1 connections now open to ShardServer2:27018 with a 5 second timeout)
+2017-09-23T05:56:21.595+0200 I SHARDING [mongosMain] Service running
+2017-09-23T05:56:21.595+0200 I NETWORK  [thread2] waiting for connections on port 27017
+2017-09-23T05:57:21.574+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host ELVN-LAP02:27019 because the pool meets constraints; 2 connections to that host remain open
+2017-09-23T05:57:21.575+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host ELVN-LAP02:27019 because the pool meets constraints; 1 connections to that host remain open
+2017-09-23T05:57:25.308+0200 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2017-09-23T05:57:25.310+0200 W SHARDING [serviceShutdown] error encountered while cleaning up distributed ping entry for ShardServer2:27017:1506138981:-8042188477005221246 :: caused by :: InterruptedAtShutdown: interrupted at shutdown
+2017-09-23T05:57:51.565+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host ELVN-LAP02:27019 as failed :: caused by :: Location17382: Can't use connection pool during shutdown
+2017-09-23T05:57:51.565+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs1
+2017-09-23T05:57:51.565+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set rs1 are down. This has happened for 1 checks in a row.
+2017-09-23T05:57:51.577+0200 I SHARDING [shard registry reload] Periodic reload of shard registry failed  :: caused by :: 11600 could not get updated shard list from config server due to interrupted at shutdown; will retry after 30s
+2017-09-23T05:57:51.594+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host ShardServer2:27018 as failed :: caused by :: Location17382: Can't use connection pool during shutdown
+2017-09-23T05:57:51.594+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs2
+2017-09-23T05:57:51.594+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set rs2 are down. This has happened for 1 checks in a row.

@@ -1,0 +1,89 @@
+2017-09-23T05:55:58.345+0200 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2017-09-23T05:55:58.346+0200 I CONTROL  [initandlisten] MongoDB starting : pid=2328 port=27018 dbpath=c:\data\db 64-bit host=ShardServer1
+2017-09-23T05:55:58.346+0200 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-09-23T05:55:58.346+0200 I CONTROL  [initandlisten] db version v3.4.9
+2017-09-23T05:55:58.346+0200 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2017-09-23T05:55:58.346+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-09-23T05:55:58.346+0200 I CONTROL  [initandlisten] modules: none
+2017-09-23T05:55:58.346+0200 I CONTROL  [initandlisten] build environment:
+2017-09-23T05:55:58.347+0200 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-09-23T05:55:58.347+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-09-23T05:55:58.347+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-09-23T05:55:58.347+0200 I CONTROL  [initandlisten] options: { config: "C:\Program Files\MongoDB\Server\3.4\mongod.cfg", replication: { replSetName: "rs1" }, security: { keyFile: "C:\Program Files\MongoDB\Server\3.4\x509.key" }, service: true, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "c:\data\db", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "c:\data\log\mongod.log" } }
+2017-09-23T05:55:58.347+0200 W -        [initandlisten] Detected unclean shutdown - c:\data\db\mongod.lock is not empty.
+2017-09-23T05:55:58.347+0200 I -        [initandlisten] Detected data files in c:\data\db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-09-23T05:55:58.348+0200 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-09-23T05:55:58.348+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=511M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-09-23T05:55:58.942+0200 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-09-23T05:55:58.943+0200 I STORAGE  [initandlisten] The size storer reports that the oplog contains 224 records totaling to 21760 bytes
+2017-09-23T05:55:58.943+0200 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-09-23T05:55:58.961+0200 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-09-23T05:55:58.975+0200 I SHARDING [initandlisten] initializing sharding state with: { _id: "shardIdentity", configsvrConnectionString: "rs1/ELVN-LAP02:27019", shardName: "rs1", clusterId: ObjectId('59c483a82aac8f5f5318cd48') }
+2017-09-23T05:55:58.975+0200 I SHARDING [initandlisten] first cluster operation detected, adding sharding hook to enable versioning and authentication to remote servers
+2017-09-23T05:55:58.977+0200 I NETWORK  [initandlisten] Starting new replica set monitor for rs1/ELVN-LAP02:27019
+2017-09-23T05:55:58.979+0200 I SHARDING [thread1] creating distributed lock ping thread for process ShardServer1:27018:1506138958:-8034098132652076335 (sleeping for 30000ms)
+2017-09-23T05:56:03.977+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 10.63.1.107:27019 after 5000ms milliseconds, giving up.
+2017-09-23T05:56:03.978+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs1
+2017-09-23T05:56:03.978+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set rs1 are down. This has happened for 1 checks in a row.
+2017-09-23T05:56:09.478+0200 W NETWORK  [initandlisten] Failed to connect to 10.63.1.107:27019 after 5000ms milliseconds, giving up.
+2017-09-23T05:56:09.479+0200 W NETWORK  [initandlisten] No primary detected for set rs1
+2017-09-23T05:56:09.479+0200 I NETWORK  [initandlisten] All nodes for set rs1 are down. This has happened for 2 checks in a row.
+2017-09-23T05:56:13.000+0200 I NETWORK  [replSetDistLockPinger] Successfully connected to ELVN-LAP02:27019 (1 connections now open to ELVN-LAP02:27019 with a 5 second timeout)
+2017-09-23T05:56:13.001+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:56:13.001+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:56:13.001+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:56:13.005+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ELVN-LAP02:27019, took 4ms (3 connections now open to ELVN-LAP02:27019)
+2017-09-23T05:56:13.006+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ELVN-LAP02:27019, took 5ms (3 connections now open to ELVN-LAP02:27019)
+2017-09-23T05:56:13.008+0200 I NETWORK  [shard registry reload] Starting new replica set monitor for rs2/ShardServer2:27018
+2017-09-23T05:56:13.009+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ELVN-LAP02:27019, took 8ms (3 connections now open to ELVN-LAP02:27019)
+2017-09-23T05:56:13.015+0200 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2017-09-23T05:56:15.064+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'c:/data/db/diagnostic.data'
+2017-09-23T05:56:15.065+0200 I STORAGE  [initandlisten] Service running
+2017-09-23T05:56:15.066+0200 I NETWORK  [thread2] waiting for connections on port 27018
+2017-09-23T05:56:15.067+0200 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "rs1", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "ShardServer1:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('59c48452bf0375bc350c1520') } }
+2017-09-23T05:56:15.067+0200 I REPL     [replExecDBWorker-0] This node is ShardServer1:27018 in the config
+2017-09-23T05:56:15.067+0200 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2017-09-23T05:56:15.068+0200 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-09-23T05:56:15.068+0200 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2017-09-23T05:56:15.069+0200 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2017-09-23T05:56:15.069+0200 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2017-09-23T05:56:15.069+0200 I REPL     [rsSync] transition to RECOVERING
+2017-09-23T05:56:15.070+0200 I REPL     [rsSync] transition to SECONDARY
+2017-09-23T05:56:15.070+0200 I REPL     [rsSync] conducting a dry run election to see if we could be elected
+2017-09-23T05:56:15.070+0200 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-09-23T05:56:15.071+0200 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 5
+2017-09-23T05:56:15.071+0200 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-09-23T05:56:15.071+0200 I REPL     [ReplicationExecutor] Entering primary catch-up mode.
+2017-09-23T05:56:15.071+0200 I REPL     [ReplicationExecutor] Exited primary catch-up mode.
+2017-09-23T05:56:15.842+0200 I NETWORK  [thread2] connection accepted from 10.63.1.107:4469 #1 (1 connection now open)
+2017-09-23T05:56:15.852+0200 I NETWORK  [conn1] received client metadata from 10.63.1.107:4469 conn1: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2017-09-23T05:56:16.039+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to ShardServer2:27018 (1 connections now open to ShardServer2:27018 with a 5 second timeout)
+2017-09-23T05:56:16.039+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs2
+2017-09-23T05:56:17.071+0200 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2017-09-23T05:56:17.354+0200 I NETWORK  [thread2] connection accepted from 10.63.1.107:4471 #2 (2 connections now open)
+2017-09-23T05:56:17.355+0200 I NETWORK  [conn2] received client metadata from 10.63.1.107:4471 conn2: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2017-09-23T05:56:17.368+0200 I ACCESS   [conn2] Successfully authenticated as principal __system on local
+2017-09-23T05:57:13.008+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host ELVN-LAP02:27019 because the pool meets constraints; 2 connections to that host remain open
+2017-09-23T05:57:13.010+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host ELVN-LAP02:27019 because the pool meets constraints; 1 connections to that host remain open
+2017-09-23T05:57:30.218+0200 I -        [conn1] end connection 10.63.1.107:4469 (2 connections now open)
+2017-09-23T05:57:30.218+0200 I -        [conn2] end connection 10.63.1.107:4471 (1 connection now open)
+2017-09-23T05:57:33.980+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket hangup detected, no longer connected (idle 18 secs, remote host 10.63.1.107:27019)
+2017-09-23T05:57:38.981+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 10.63.1.107:27019 after 5000ms milliseconds, giving up.
+2017-09-23T05:57:38.981+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host ELVN-LAP02:27019 as failed :: caused by :: Location40356: connection pool: connect failed ELVN-LAP02:27019 : couldn't connect to server ELVN-LAP02:27019, connection attempt failed
+2017-09-23T05:57:38.981+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs1
+2017-09-23T05:57:38.981+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set rs1 are down. This has happened for 1 checks in a row.
+2017-09-23T05:57:41.724+0200 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2017-09-23T05:57:41.724+0200 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2017-09-23T05:57:41.724+0200 I NETWORK  [serviceShutdown] closing listening socket: 368
+2017-09-23T05:57:41.724+0200 I NETWORK  [serviceShutdown] shutdown: going to flush diaglog...
+2017-09-23T05:57:41.724+0200 I REPL     [serviceShutdown] shutting down replication subsystems
+2017-09-23T05:57:41.724+0200 I REPL     [serviceShutdown] Stopping replication reporter thread
+2017-09-23T05:57:41.724+0200 I REPL     [serviceShutdown] Stopping replication fetcher thread
+2017-09-23T05:57:41.725+0200 I REPL     [serviceShutdown] Stopping replication applier thread
+2017-09-23T05:57:42.146+0200 I REPL     [serviceShutdown] Stopping replication storage threads
+2017-09-23T05:57:42.146+0200 W SHARDING [serviceShutdown] cant reload ShardRegistry  :: caused by :: CallbackCanceled: Callback canceled
+2017-09-23T05:57:42.146+0200 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2017-09-23T05:57:42.149+0200 W SHARDING [serviceShutdown] error encountered while cleaning up distributed ping entry for ShardServer1:27018:1506138958:-8034098132652076335 :: caused by :: InterruptedAtShutdown: interrupted at shutdown
+2017-09-23T05:57:42.149+0200 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2017-09-23T05:57:42.159+0200 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2017-09-23T05:57:42.160+0200 I CONTROL  [serviceShutdown] now exiting

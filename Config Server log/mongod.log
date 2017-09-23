@@ -1,0 +1,219 @@
+2017-09-23T05:56:09.768+0200 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten] MongoDB starting : pid=4336 port=27019 dbpath=c:\data\db 64-bit host=ELVN-LAP02
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten] db version v3.4.9
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten] modules: none
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten] build environment:
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-09-23T05:56:09.769+0200 I CONTROL  [initandlisten] options: { config: "C:\Program Files\MongoDB\Server\3.4\mongod.cfg", replication: { replSetName: "rs1" }, security: { keyFile: "C:\Program Files\MongoDB\Server\3.4\x509.key" }, service: true, sharding: { clusterRole: "configsvr" }, storage: { dbPath: "c:\data\db", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "c:\data\log\mongod.log" } }
+2017-09-23T05:56:09.773+0200 I -        [initandlisten] Detected data files in c:\data\db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-09-23T05:56:09.773+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3526M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-09-23T05:56:10.076+0200 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-09-23T05:56:10.076+0200 I STORAGE  [initandlisten] The size storer reports that the oplog contains 4629 records totaling to 1008268 bytes
+2017-09-23T05:56:10.076+0200 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-09-23T05:56:10.123+0200 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-09-23T05:56:11.280+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'c:/data/db/diagnostic.data'
+2017-09-23T05:56:11.282+0200 I SHARDING [shard registry reload] Periodic reload of shard registry failed  :: caused by :: 134 could not get updated shard list from config server due to Read concern majority reads are currently not possible.; will retry after 30s
+2017-09-23T05:56:11.282+0200 I SHARDING [thread1] creating distributed lock ping thread for process ConfigServer (sleeping for 30000ms)
+2017-09-23T05:56:11.283+0200 I NETWORK  [thread2] waiting for connections on port 27019
+2017-09-23T05:56:11.283+0200 I STORAGE  [initandlisten] Service running
+2017-09-23T05:56:11.286+0200 I REPL     [replExecDBWorker-2] New replica set config in use: { _id: "rs1", version: 1, configsvr: true, protocolVersion: 1, members: [ { _id: 0, host: "ELVN-LAP02:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('59c483a62aac8f5f5318cd39') } }
+2017-09-23T05:56:11.286+0200 I REPL     [replExecDBWorker-2] This node is ELVN-LAP02:27019 in the config
+2017-09-23T05:56:11.286+0200 I REPL     [replExecDBWorker-2] transition to STARTUP2
+2017-09-23T05:56:11.286+0200 I REPL     [replExecDBWorker-2] Starting replication snapshot thread
+2017-09-23T05:56:11.286+0200 I REPL     [replExecDBWorker-2] Starting replication storage threads
+2017-09-23T05:56:11.287+0200 I REPL     [replExecDBWorker-2] Starting replication fetcher thread
+2017-09-23T05:56:11.287+0200 I REPL     [replExecDBWorker-2] Starting replication applier thread
+2017-09-23T05:56:11.287+0200 I REPL     [replExecDBWorker-2] Starting replication reporter thread
+2017-09-23T05:56:11.287+0200 I REPL     [rsSync] transition to RECOVERING
+2017-09-23T05:56:11.288+0200 I REPL     [rsSync] transition to SECONDARY
+2017-09-23T05:56:11.288+0200 I REPL     [rsSync] conducting a dry run election to see if we could be elected
+2017-09-23T05:56:11.288+0200 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-09-23T05:56:11.298+0200 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 7
+2017-09-23T05:56:11.298+0200 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-09-23T05:56:11.298+0200 I REPL     [ReplicationExecutor] Entering primary catch-up mode.
+2017-09-23T05:56:11.298+0200 I REPL     [ReplicationExecutor] Exited primary catch-up mode.
+2017-09-23T05:56:13.292+0200 I SHARDING [rsSync] distributed lock 'balancer' acquired for 'CSRS Balancer', ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:56:13.292+0200 I SHARDING [Balancer] CSRS balancer is starting
+2017-09-23T05:56:13.292+0200 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2017-09-23T05:56:13.300+0200 I SHARDING [Balancer] lock 'balancer' successfully forced
+2017-09-23T05:56:13.300+0200 I SHARDING [Balancer] distributed lock 'balancer' acquired, ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:56:13.300+0200 I SHARDING [Balancer] CSRS balancer thread is recovering
+2017-09-23T05:56:13.300+0200 I SHARDING [Balancer] CSRS balancer thread is recovered
+2017-09-23T05:56:13.300+0200 I NETWORK  [Balancer] Starting new replica set monitor for rs1/ShardServer1:27018
+2017-09-23T05:56:13.300+0200 I NETWORK  [Balancer] Starting new replica set monitor for rs2/ShardServer2:27018
+2017-09-23T05:56:13.440+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49246 #1 (1 connection now open)
+2017-09-23T05:56:13.441+0200 I NETWORK  [conn1] received client metadata from 10.63.1.49:49246 conn1: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:13.456+0200 I ACCESS   [conn1] Successfully authenticated as principal __system on local
+2017-09-23T05:56:13.460+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49247 #2 (2 connections now open)
+2017-09-23T05:56:13.460+0200 I NETWORK  [conn2] received client metadata from 10.63.1.49:49247 conn2: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:13.460+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49248 #3 (3 connections now open)
+2017-09-23T05:56:13.461+0200 I NETWORK  [conn3] received client metadata from 10.63.1.49:49248 conn3: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:13.462+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49249 #4 (4 connections now open)
+2017-09-23T05:56:13.462+0200 I ACCESS   [conn2] Successfully authenticated as principal __system on local
+2017-09-23T05:56:13.463+0200 I ACCESS   [conn3] Successfully authenticated as principal __system on local
+2017-09-23T05:56:13.463+0200 I NETWORK  [conn4] received client metadata from 10.63.1.49:49249 conn4: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:13.466+0200 I ACCESS   [conn4] Successfully authenticated as principal __system on local
+2017-09-23T05:56:13.799+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49237 #5 (5 connections now open)
+2017-09-23T05:56:13.799+0200 I NETWORK  [conn5] received client metadata from 10.63.1.75:49237 conn5: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:13.817+0200 I ACCESS   [conn5] Successfully authenticated as principal __system on local
+2017-09-23T05:56:13.819+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49238 #6 (6 connections now open)
+2017-09-23T05:56:13.819+0200 I NETWORK  [conn6] received client metadata from 10.63.1.75:49238 conn6: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:13.820+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49239 #7 (7 connections now open)
+2017-09-23T05:56:13.820+0200 I NETWORK  [conn7] received client metadata from 10.63.1.75:49239 conn7: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:13.821+0200 I ACCESS   [conn6] Successfully authenticated as principal __system on local
+2017-09-23T05:56:13.822+0200 I ACCESS   [conn7] Successfully authenticated as principal __system on local
+2017-09-23T05:56:13.824+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49240 #8 (8 connections now open)
+2017-09-23T05:56:13.824+0200 I NETWORK  [conn8] received client metadata from 10.63.1.75:49240 conn8: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:13.826+0200 I ACCESS   [conn8] Successfully authenticated as principal __system on local
+2017-09-23T05:56:16.309+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to ShardServer1:27018 (1 connections now open to ShardServer1:27018 with a 5 second timeout)
+2017-09-23T05:56:16.310+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs1
+2017-09-23T05:56:16.311+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to ShardServer2:27018 (1 connections now open to ShardServer2:27018 with a 5 second timeout)
+2017-09-23T05:56:16.311+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs2
+2017-09-23T05:56:16.810+0200 W NETWORK  [Balancer] No primary detected for set rs1
+2017-09-23T05:56:17.310+0200 W NETWORK  [Balancer] No primary detected for set rs1
+2017-09-23T05:56:17.810+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ShardServer1:27018
+2017-09-23T05:56:17.826+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ShardServer1:27018, took 16ms (1 connections now open to ShardServer1:27018)
+2017-09-23T05:56:17.827+0200 W NETWORK  [Balancer] No primary detected for set rs2
+2017-09-23T05:56:18.327+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ShardServer2:27018
+2017-09-23T05:56:18.343+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ShardServer2:27018, took 16ms (1 connections now open to ShardServer2:27018)
+2017-09-23T05:56:18.357+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 0|0||000000000000000000000000
+2017-09-23T05:56:18.375+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 17 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:18.389+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:18.389+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:18.406+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:18.406+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:18.409+0200 I SHARDING [Balancer] distributed lock 'DataCollector.EMessageData' acquired for 'Migrating chunk(s) in collection DataCollector.EMessageData', ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:56:18.423+0200 W SHARDING [conn8] cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:18.432+0200 I SHARDING [NetworkInterfaceASIO-ShardRegistry-0] distributed lock with ts: '59c5db5b8659f3d42a18e0ca' and _id: 'DataCollector.EMessageData' unlocked.
+2017-09-23T05:56:18.434+0200 I SHARDING [Balancer] Balancer move DataCollector.EMessageData: [{ SiteId: MinKey }, { SiteId: 0.0 }), from rs2, to rs1 failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:18.435+0200 I SHARDING [Balancer] about to log metadata event into actionlog: { _id: "ELVN-LAP02-2017-09-23T05:56:18.434+0200-59c5db628659f3d42a18e114", server: "ELVN-LAP02", clientAddr: "", time: new Date(1506138978434), what: "balancer.round", ns: "", details: { executionTimeMillis: 5134, errorOccured: false, candidateChunks: 1, chunksMoved: 0 } }
+2017-09-23T05:56:19.492+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49251 #9 (9 connections now open)
+2017-09-23T05:56:19.494+0200 I NETWORK  [conn9] received client metadata from 10.63.1.49:49251 conn9: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:19.512+0200 I ACCESS   [conn9] Successfully authenticated as principal __system on local
+2017-09-23T05:56:19.514+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49252 #10 (10 connections now open)
+2017-09-23T05:56:19.515+0200 I NETWORK  [conn10] received client metadata from 10.63.1.49:49252 conn10: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:19.516+0200 I ACCESS   [conn10] Successfully authenticated as principal __system on local
+2017-09-23T05:56:19.517+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49253 #11 (11 connections now open)
+2017-09-23T05:56:19.518+0200 I NETWORK  [conn11] received client metadata from 10.63.1.49:49253 conn11: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:19.518+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49254 #12 (12 connections now open)
+2017-09-23T05:56:19.519+0200 I NETWORK  [conn12] received client metadata from 10.63.1.49:49254 conn12: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:19.520+0200 I ACCESS   [conn11] Successfully authenticated as principal __system on local
+2017-09-23T05:56:19.520+0200 I ACCESS   [conn12] Successfully authenticated as principal __system on local
+2017-09-23T05:56:22.006+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49242 #13 (13 connections now open)
+2017-09-23T05:56:22.008+0200 I NETWORK  [conn13] received client metadata from 10.63.1.75:49242 conn13: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:22.023+0200 I ACCESS   [conn13] Successfully authenticated as principal __system on local
+2017-09-23T05:56:22.025+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49243 #14 (14 connections now open)
+2017-09-23T05:56:22.025+0200 I NETWORK  [conn14] received client metadata from 10.63.1.75:49243 conn14: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:22.026+0200 I ACCESS   [conn14] Successfully authenticated as principal __system on local
+2017-09-23T05:56:22.030+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49244 #15 (15 connections now open)
+2017-09-23T05:56:22.031+0200 I NETWORK  [conn15] received client metadata from 10.63.1.75:49244 conn15: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:22.033+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49245 #16 (16 connections now open)
+2017-09-23T05:56:22.033+0200 I NETWORK  [conn16] received client metadata from 10.63.1.75:49245 conn16: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:22.034+0200 I ACCESS   [conn15] Successfully authenticated as principal __system on local
+2017-09-23T05:56:22.035+0200 I ACCESS   [conn16] Successfully authenticated as principal __system on local
+2017-09-23T05:56:28.441+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:28.442+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:28.444+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:28.445+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:28.448+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:28.448+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:28.451+0200 I SHARDING [Balancer] distributed lock 'DataCollector.EMessageData' acquired for 'Migrating chunk(s) in collection DataCollector.EMessageData', ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:56:28.462+0200 W SHARDING [conn8] cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:28.473+0200 I SHARDING [NetworkInterfaceASIO-ShardRegistry-0] distributed lock with ts: '59c5db5b8659f3d42a18e0ca' and _id: 'DataCollector.EMessageData' unlocked.
+2017-09-23T05:56:28.475+0200 I SHARDING [Balancer] Balancer move DataCollector.EMessageData: [{ SiteId: MinKey }, { SiteId: 0.0 }), from rs2, to rs1 failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:28.475+0200 I SHARDING [Balancer] about to log metadata event into actionlog: { _id: "ELVN-LAP02-2017-09-23T05:56:28.475+0200-59c5db6c8659f3d42a18e15b", server: "ELVN-LAP02", clientAddr: "", time: new Date(1506138988475), what: "balancer.round", ns: "", details: { executionTimeMillis: 37, errorOccured: false, candidateChunks: 1, chunksMoved: 0 } }
+2017-09-23T05:56:38.482+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:38.483+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:38.485+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:38.486+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:38.494+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:38.494+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:38.497+0200 I SHARDING [Balancer] distributed lock 'DataCollector.EMessageData' acquired for 'Migrating chunk(s) in collection DataCollector.EMessageData', ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:56:38.502+0200 W SHARDING [conn8] cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:38.510+0200 I SHARDING [NetworkInterfaceASIO-ShardRegistry-0] distributed lock with ts: '59c5db5b8659f3d42a18e0ca' and _id: 'DataCollector.EMessageData' unlocked.
+2017-09-23T05:56:38.512+0200 I SHARDING [Balancer] Balancer move DataCollector.EMessageData: [{ SiteId: MinKey }, { SiteId: 0.0 }), from rs2, to rs1 failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:38.513+0200 I SHARDING [Balancer] about to log metadata event into actionlog: { _id: "ELVN-LAP02-2017-09-23T05:56:38.513+0200-59c5db768659f3d42a18e170", server: "ELVN-LAP02", clientAddr: "", time: new Date(1506138998513), what: "balancer.round", ns: "", details: { executionTimeMillis: 33, errorOccured: false, candidateChunks: 1, chunksMoved: 0 } }
+2017-09-23T05:56:48.519+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:48.520+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:48.522+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:48.523+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:48.526+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:48.526+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:48.529+0200 I SHARDING [Balancer] distributed lock 'DataCollector.EMessageData' acquired for 'Migrating chunk(s) in collection DataCollector.EMessageData', ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:56:48.534+0200 W SHARDING [conn8] cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:48.542+0200 I SHARDING [NetworkInterfaceASIO-ShardRegistry-0] distributed lock with ts: '59c5db5b8659f3d42a18e0ca' and _id: 'DataCollector.EMessageData' unlocked.
+2017-09-23T05:56:48.545+0200 I SHARDING [Balancer] Balancer move DataCollector.EMessageData: [{ SiteId: MinKey }, { SiteId: 0.0 }), from rs2, to rs1 failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:48.545+0200 I SHARDING [Balancer] about to log metadata event into actionlog: { _id: "ELVN-LAP02-2017-09-23T05:56:48.545+0200-59c5db808659f3d42a18e18a", server: "ELVN-LAP02", clientAddr: "", time: new Date(1506139008545), what: "balancer.round", ns: "", details: { executionTimeMillis: 29, errorOccured: false, candidateChunks: 1, chunksMoved: 0 } }
+2017-09-23T05:56:58.551+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:58.552+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:58.554+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:58.555+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:58.557+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:58.558+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:58.560+0200 I SHARDING [Balancer] distributed lock 'DataCollector.EMessageData' acquired for 'Migrating chunk(s) in collection DataCollector.EMessageData', ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:56:58.565+0200 W SHARDING [conn8] cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:58.574+0200 I SHARDING [NetworkInterfaceASIO-ShardRegistry-0] distributed lock with ts: '59c5db5b8659f3d42a18e0ca' and _id: 'DataCollector.EMessageData' unlocked.
+2017-09-23T05:56:58.577+0200 I SHARDING [Balancer] Balancer move DataCollector.EMessageData: [{ SiteId: MinKey }, { SiteId: 0.0 }), from rs2, to rs1 failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:58.577+0200 I SHARDING [Balancer] about to log metadata event into actionlog: { _id: "ELVN-LAP02-2017-09-23T05:56:58.577+0200-59c5db8a8659f3d42a18e1a7", server: "ELVN-LAP02", clientAddr: "", time: new Date(1506139018577), what: "balancer.round", ns: "", details: { executionTimeMillis: 29, errorOccured: false, candidateChunks: 1, chunksMoved: 0 } }
+2017-09-23T05:57:08.584+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:08.584+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:08.587+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:08.587+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:08.590+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:08.590+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:08.593+0200 I SHARDING [Balancer] distributed lock 'DataCollector.EMessageData' acquired for 'Migrating chunk(s) in collection DataCollector.EMessageData', ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:57:08.597+0200 W SHARDING [conn8] cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:57:08.606+0200 I SHARDING [NetworkInterfaceASIO-ShardRegistry-0] distributed lock with ts: '59c5db5b8659f3d42a18e0ca' and _id: 'DataCollector.EMessageData' unlocked.
+2017-09-23T05:57:08.609+0200 I SHARDING [Balancer] Balancer move DataCollector.EMessageData: [{ SiteId: MinKey }, { SiteId: 0.0 }), from rs2, to rs1 failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:57:08.609+0200 I SHARDING [Balancer] about to log metadata event into actionlog: { _id: "ELVN-LAP02-2017-09-23T05:57:08.609+0200-59c5db948659f3d42a18e1bd", server: "ELVN-LAP02", clientAddr: "", time: new Date(1506139028609), what: "balancer.round", ns: "", details: { executionTimeMillis: 28, errorOccured: false, candidateChunks: 1, chunksMoved: 0 } }
+2017-09-23T05:57:13.468+0200 I -        [conn3] end connection 10.63.1.49:49248 (16 connections now open)
+2017-09-23T05:57:13.470+0200 I -        [conn4] end connection 10.63.1.49:49249 (15 connections now open)
+2017-09-23T05:57:13.826+0200 I -        [conn7] end connection 10.63.1.75:49239 (14 connections now open)
+2017-09-23T05:57:13.830+0200 I -        [conn6] end connection 10.63.1.75:49238 (13 connections now open)
+2017-09-23T05:57:18.614+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:18.615+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:18.617+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:18.617+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:18.621+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:18.621+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:18.623+0200 I SHARDING [Balancer] distributed lock 'DataCollector.EMessageData' acquired for 'Migrating chunk(s) in collection DataCollector.EMessageData', ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:57:18.628+0200 W SHARDING [conn8] cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:57:18.637+0200 I SHARDING [NetworkInterfaceASIO-ShardRegistry-0] distributed lock with ts: '59c5db5b8659f3d42a18e0ca' and _id: 'DataCollector.EMessageData' unlocked.
+2017-09-23T05:57:18.645+0200 I SHARDING [Balancer] Balancer move DataCollector.EMessageData: [{ SiteId: MinKey }, { SiteId: 0.0 }), from rs2, to rs1 failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:57:18.645+0200 I SHARDING [Balancer] about to log metadata event into actionlog: { _id: "ELVN-LAP02-2017-09-23T05:57:18.645+0200-59c5db9e8659f3d42a18e1d8", server: "ELVN-LAP02", clientAddr: "", time: new Date(1506139038645), what: "balancer.round", ns: "", details: { executionTimeMillis: 34, errorOccured: false, candidateChunks: 1, chunksMoved: 0 } }
+2017-09-23T05:57:19.526+0200 I -        [conn11] end connection 10.63.1.49:49253 (12 connections now open)
+2017-09-23T05:57:19.530+0200 I -        [conn10] end connection 10.63.1.49:49252 (11 connections now open)
+2017-09-23T05:57:22.038+0200 I -        [conn16] end connection 10.63.1.75:49245 (10 connections now open)
+2017-09-23T05:57:22.039+0200 I -        [conn14] end connection 10.63.1.75:49243 (9 connections now open)
+2017-09-23T05:57:28.652+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:28.653+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:28.655+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:28.656+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:28.658+0200 I SHARDING [Balancer] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:28.659+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:28.666+0200 I SHARDING [Balancer] distributed lock 'DataCollector.EMessageData' acquired for 'Migrating chunk(s) in collection DataCollector.EMessageData', ts : 59c5db5b8659f3d42a18e0ca
+2017-09-23T05:57:28.671+0200 W SHARDING [conn8] cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:57:28.681+0200 I SHARDING [NetworkInterfaceASIO-ShardRegistry-0] distributed lock with ts: '59c5db5b8659f3d42a18e0ca' and _id: 'DataCollector.EMessageData' unlocked.
+2017-09-23T05:57:28.684+0200 I SHARDING [Balancer] Balancer move DataCollector.EMessageData: [{ SiteId: MinKey }, { SiteId: 0.0 }), from rs2, to rs1 failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:57:28.684+0200 I SHARDING [Balancer] about to log metadata event into actionlog: { _id: "ELVN-LAP02-2017-09-23T05:57:28.684+0200-59c5dba88659f3d42a18e1f5", server: "ELVN-LAP02", clientAddr: "", time: new Date(1506139048684), what: "balancer.round", ns: "", details: { executionTimeMillis: 35, errorOccured: false, candidateChunks: 1, chunksMoved: 0 } }
+2017-09-23T05:57:29.670+0200 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2017-09-23T05:57:29.670+0200 I SHARDING [Balancer] CSRS balancer is now stopped
+2017-09-23T05:57:29.671+0200 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2017-09-23T05:57:29.671+0200 I NETWORK  [serviceShutdown] closing listening socket: 420
+2017-09-23T05:57:29.671+0200 I NETWORK  [serviceShutdown] shutdown: going to flush diaglog...
+2017-09-23T05:57:29.671+0200 I REPL     [serviceShutdown] shutting down replication subsystems
+2017-09-23T05:57:29.671+0200 I REPL     [serviceShutdown] Stopping replication reporter thread
+2017-09-23T05:57:29.674+0200 I REPL     [serviceShutdown] Stopping replication fetcher thread
+2017-09-23T05:57:29.674+0200 I REPL     [serviceShutdown] Stopping replication applier thread
+2017-09-23T05:57:30.292+0200 I REPL     [serviceShutdown] Stopping replication snapshot thread
+2017-09-23T05:57:30.292+0200 I REPL     [serviceShutdown] Stopping replication storage threads
+2017-09-23T05:57:30.292+0200 W SHARDING [serviceShutdown] cant reload ShardRegistry  :: caused by :: CallbackCanceled: Callback canceled
+2017-09-23T05:57:30.292+0200 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2017-09-23T05:57:30.300+0200 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2017-09-23T05:57:30.670+0200 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2017-09-23T05:57:30.671+0200 I CONTROL  [serviceShutdown] now exiting

@@ -1,0 +1,166 @@
+2017-09-23T05:56:04.340+0200 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2017-09-23T05:56:04.341+0200 I CONTROL  [initandlisten] MongoDB starting : pid=268 port=27018 dbpath=c:\data\db 64-bit host=ShardServer2
+2017-09-23T05:56:04.341+0200 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2017-09-23T05:56:04.341+0200 I CONTROL  [initandlisten] db version v3.4.9
+2017-09-23T05:56:04.342+0200 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2017-09-23T05:56:04.342+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-09-23T05:56:04.342+0200 I CONTROL  [initandlisten] modules: none
+2017-09-23T05:56:04.342+0200 I CONTROL  [initandlisten] build environment:
+2017-09-23T05:56:04.342+0200 I CONTROL  [initandlisten]     distmod: 2008plus
+2017-09-23T05:56:04.342+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2017-09-23T05:56:04.342+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-09-23T05:56:04.342+0200 I CONTROL  [initandlisten] options: { config: "C:\Program Files\MongoDB\Server\3.4\mongod.cfg", replication: { replSetName: "rs2" }, security: { keyFile: "C:\Program Files\MongoDB\Server\3.4\x509.key" }, service: true, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "c:\data\db", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "c:\data\log\mongod.log" } }
+2017-09-23T05:56:04.342+0200 W -        [initandlisten] Detected unclean shutdown - c:\data\db\mongod.lock is not empty.
+2017-09-23T05:56:04.343+0200 I -        [initandlisten] Detected data files in c:\data\db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-09-23T05:56:04.343+0200 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-09-23T05:56:04.343+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=511M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-09-23T05:56:04.795+0200 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-09-23T05:56:04.800+0200 I STORAGE  [initandlisten] The size storer reports that the oplog contains 198 records totaling to 19494 bytes
+2017-09-23T05:56:04.800+0200 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-09-23T05:56:04.821+0200 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-09-23T05:56:04.829+0200 I SHARDING [initandlisten] initializing sharding state with: { _id: "shardIdentity", configsvrConnectionString: "rs1/ELVN-LAP02:27019", shardName: "rs2", clusterId: ObjectId('59c483a82aac8f5f5318cd48') }
+2017-09-23T05:56:04.829+0200 I SHARDING [initandlisten] first cluster operation detected, adding sharding hook to enable versioning and authentication to remote servers
+2017-09-23T05:56:04.830+0200 I NETWORK  [initandlisten] Starting new replica set monitor for rs1/ELVN-LAP02:27019
+2017-09-23T05:56:04.833+0200 I SHARDING [thread1] creating distributed lock ping thread for process ShardServer2:27018:1506138964:-3021517119033953656 (sleeping for 30000ms)
+2017-09-23T05:56:09.834+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 10.63.1.107:27019 after 5000ms milliseconds, giving up.
+2017-09-23T05:56:09.834+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs1
+2017-09-23T05:56:09.834+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set rs1 are down. This has happened for 1 checks in a row.
+2017-09-23T05:56:13.355+0200 I NETWORK  [initandlisten] Successfully connected to ELVN-LAP02:27019 (1 connections now open to ELVN-LAP02:27019 with a 5 second timeout)
+2017-09-23T05:56:13.356+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:56:13.356+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:56:13.356+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:56:13.360+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ELVN-LAP02:27019, took 4ms (3 connections now open to ELVN-LAP02:27019)
+2017-09-23T05:56:13.360+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ELVN-LAP02:27019, took 4ms (3 connections now open to ELVN-LAP02:27019)
+2017-09-23T05:56:13.361+0200 I NETWORK  [shard registry reload] Starting new replica set monitor for rs2/ShardServer2:27018
+2017-09-23T05:56:13.365+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Successfully connected to ELVN-LAP02:27019, took 8ms (3 connections now open to ELVN-LAP02:27019)
+2017-09-23T05:56:13.365+0200 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: LockStateChangeFailed: findAndModify query predicate didn't match any lock document
+2017-09-23T05:56:15.419+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'c:/data/db/diagnostic.data'
+2017-09-23T05:56:15.420+0200 I STORAGE  [initandlisten] Service running
+2017-09-23T05:56:15.421+0200 I NETWORK  [thread2] waiting for connections on port 27018
+2017-09-23T05:56:15.423+0200 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "rs2", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "ShardServer2:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 60000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('59c4846c5764f960ad43d0b5') } }
+2017-09-23T05:56:15.423+0200 I REPL     [replExecDBWorker-0] This node is ShardServer2:27018 in the config
+2017-09-23T05:56:15.423+0200 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2017-09-23T05:56:15.423+0200 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-09-23T05:56:15.424+0200 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2017-09-23T05:56:15.424+0200 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2017-09-23T05:56:15.424+0200 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2017-09-23T05:56:15.424+0200 I REPL     [rsSync] transition to RECOVERING
+2017-09-23T05:56:15.425+0200 I REPL     [rsSync] transition to SECONDARY
+2017-09-23T05:56:15.425+0200 I REPL     [rsSync] conducting a dry run election to see if we could be elected
+2017-09-23T05:56:15.425+0200 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-09-23T05:56:15.427+0200 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 5
+2017-09-23T05:56:15.427+0200 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-09-23T05:56:15.427+0200 I REPL     [ReplicationExecutor] Entering primary catch-up mode.
+2017-09-23T05:56:15.427+0200 I REPL     [ReplicationExecutor] Exited primary catch-up mode.
+2017-09-23T05:56:15.849+0200 I NETWORK  [thread2] connection accepted from 10.63.1.107:4470 #1 (1 connection now open)
+2017-09-23T05:56:15.849+0200 I NETWORK  [conn1] received client metadata from 10.63.1.107:4470 conn1: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2017-09-23T05:56:16.000+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49250 #2 (2 connections now open)
+2017-09-23T05:56:16.001+0200 I NETWORK  [conn2] received client metadata from 10.63.1.49:49250 conn2: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:16.033+0200 I ACCESS   [conn2] Successfully authenticated as principal __system on local
+2017-09-23T05:56:17.426+0200 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2017-09-23T05:56:17.867+0200 I NETWORK  [thread2] connection accepted from 10.63.1.107:4472 #3 (3 connections now open)
+2017-09-23T05:56:17.867+0200 I NETWORK  [conn3] received client metadata from 10.63.1.107:4472 conn3: { driver: { name: "NetworkInterfaceASIO-ShardRegistry", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows 7", architecture: "x86_64", version: "6.1 SP1 (build 7601)" } }
+2017-09-23T05:56:17.881+0200 I ACCESS   [conn3] Successfully authenticated as principal __system on local
+2017-09-23T05:56:17.948+0200 I SHARDING [conn3] Starting chunk migration ns: DataCollector.EMessageData, [{ SiteId: MinKey }, { SiteId: 0.0 }), fromShard: rs2, toShard: rs1 with expected collection version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:17.949+0200 I SHARDING [conn3] Refreshing chunks for collection DataCollector.EMessageData based on version 0|0||000000000000000000000000
+2017-09-23T05:56:17.951+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 1 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:17.951+0200 I SHARDING [conn3] Marking collection DataCollector.EMessageData as sharded with collection version: 1|10||59c484ea3a2462f63747e601, shard version: 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:17.951+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:17.951+0200-59c5db6187b00c54d092a8ec", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506138977951), what: "moveChunk.start", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:17.961+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:17.961+0200-59c5db6187b00c54d092a8ee", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506138977961), what: "moveChunk.error", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:17.964+0200 W SHARDING [conn3] Chunk move failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:17.965+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:17.965+0200-59c5db6187b00c54d092a8ef", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506138977965), what: "moveChunk.from", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, step 1 of 7: 0, step 2 of 7: 2, to: "rs1", from: "rs2", note: "aborted" } }
+2017-09-23T05:56:18.364+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 10.63.1.75:27018 after 5000ms milliseconds, giving up.
+2017-09-23T05:56:18.364+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs2
+2017-09-23T05:56:18.364+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set rs2 are down. This has happened for 1 checks in a row.
+2017-09-23T05:56:19.064+0200 I NETWORK  [thread2] connection accepted from 10.63.1.49:49255 #4 (4 connections now open)
+2017-09-23T05:56:19.064+0200 I NETWORK  [conn4] received client metadata from 10.63.1.49:49255 conn4: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:19.083+0200 I ACCESS   [conn4] Successfully authenticated as principal __system on local
+2017-09-23T05:56:21.577+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49246 #5 (5 connections now open)
+2017-09-23T05:56:21.577+0200 I NETWORK  [conn5] received client metadata from 10.63.1.75:49246 conn5: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:21.592+0200 I ACCESS   [conn5] Successfully authenticated as principal __system on local
+2017-09-23T05:56:27.990+0200 I SHARDING [conn3] Starting chunk migration ns: DataCollector.EMessageData, [{ SiteId: MinKey }, { SiteId: 0.0 }), fromShard: rs2, toShard: rs1 with expected collection version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:27.990+0200 I SHARDING [conn3] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:27.991+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:27.991+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:27.991+0200-59c5db6b87b00c54d092a900", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506138987991), what: "moveChunk.start", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:28.001+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:28.001+0200-59c5db6c87b00c54d092a902", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506138988001), what: "moveChunk.error", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:28.004+0200 W SHARDING [conn3] Chunk move failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:28.004+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:28.004+0200-59c5db6c87b00c54d092a903", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506138988004), what: "moveChunk.from", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, step 1 of 7: 0, step 2 of 7: 0, to: "rs1", from: "rs2", note: "aborted" } }
+2017-09-23T05:56:38.035+0200 I SHARDING [conn3] Starting chunk migration ns: DataCollector.EMessageData, [{ SiteId: MinKey }, { SiteId: 0.0 }), fromShard: rs2, toShard: rs1 with expected collection version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:38.035+0200 I SHARDING [conn3] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:38.036+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:38.036+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:38.036+0200-59c5db7687b00c54d092a908", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506138998036), what: "moveChunk.start", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:38.039+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:38.039+0200-59c5db7687b00c54d092a90a", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506138998039), what: "moveChunk.error", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:38.042+0200 W SHARDING [conn3] Chunk move failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:38.042+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:38.042+0200-59c5db7687b00c54d092a90b", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506138998042), what: "moveChunk.from", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, step 1 of 7: 0, step 2 of 7: 0, to: "rs1", from: "rs2", note: "aborted" } }
+2017-09-23T05:56:48.066+0200 I SHARDING [conn3] Starting chunk migration ns: DataCollector.EMessageData, [{ SiteId: MinKey }, { SiteId: 0.0 }), fromShard: rs2, toShard: rs1 with expected collection version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:48.066+0200 I SHARDING [conn3] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:48.067+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:48.067+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:48.067+0200-59c5db8087b00c54d092a911", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139008067), what: "moveChunk.start", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:48.070+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:48.070+0200-59c5db8087b00c54d092a913", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139008070), what: "moveChunk.error", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:48.073+0200 W SHARDING [conn3] Chunk move failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:48.073+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:48.073+0200-59c5db8087b00c54d092a914", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139008073), what: "moveChunk.from", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, step 1 of 7: 0, step 2 of 7: 0, to: "rs1", from: "rs2", note: "aborted" } }
+2017-09-23T05:56:48.365+0200 I NETWORK  [thread2] connection accepted from 10.63.1.75:49247 #6 (6 connections now open)
+2017-09-23T05:56:48.365+0200 I NETWORK  [conn6] received client metadata from 10.63.1.75:49247 conn6: { driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Windows", name: "Microsoft Windows Server 2012", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2017-09-23T05:56:48.380+0200 I ACCESS   [conn6] Successfully authenticated as principal __system on local
+2017-09-23T05:56:48.380+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to ShardServer2:27018 (1 connections now open to ShardServer2:27018 with a 5 second timeout)
+2017-09-23T05:56:58.098+0200 I SHARDING [conn3] Starting chunk migration ns: DataCollector.EMessageData, [{ SiteId: MinKey }, { SiteId: 0.0 }), fromShard: rs2, toShard: rs1 with expected collection version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:58.098+0200 I SHARDING [conn3] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:58.099+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:56:58.099+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:58.099+0200-59c5db8a87b00c54d092a921", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139018099), what: "moveChunk.start", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:58.102+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:58.102+0200-59c5db8a87b00c54d092a923", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139018102), what: "moveChunk.error", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:56:58.105+0200 W SHARDING [conn3] Chunk move failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:56:58.105+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:56:58.105+0200-59c5db8a87b00c54d092a924", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139018105), what: "moveChunk.from", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, step 1 of 7: 0, step 2 of 7: 0, to: "rs1", from: "rs2", note: "aborted" } }
+2017-09-23T05:57:08.129+0200 I SHARDING [conn3] Starting chunk migration ns: DataCollector.EMessageData, [{ SiteId: MinKey }, { SiteId: 0.0 }), fromShard: rs2, toShard: rs1 with expected collection version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:08.129+0200 I SHARDING [conn3] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:08.130+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:08.130+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:57:08.130+0200-59c5db9487b00c54d092a929", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139028130), what: "moveChunk.start", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:57:08.133+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:57:08.133+0200-59c5db9487b00c54d092a92b", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139028133), what: "moveChunk.error", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:57:08.136+0200 W SHARDING [conn3] Chunk move failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:57:08.136+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:57:08.136+0200-59c5db9487b00c54d092a92c", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139028136), what: "moveChunk.from", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, step 1 of 7: 0, step 2 of 7: 0, to: "rs1", from: "rs2", note: "aborted" } }
+2017-09-23T05:57:13.362+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host ELVN-LAP02:27019 because the pool meets constraints; 2 connections to that host remain open
+2017-09-23T05:57:13.366+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Ending idle connection to host ELVN-LAP02:27019 because the pool meets constraints; 1 connections to that host remain open
+2017-09-23T05:57:18.160+0200 I SHARDING [conn3] Starting chunk migration ns: DataCollector.EMessageData, [{ SiteId: MinKey }, { SiteId: 0.0 }), fromShard: rs2, toShard: rs1 with expected collection version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:18.160+0200 I SHARDING [conn3] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:18.161+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:18.161+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:57:18.161+0200-59c5db9e87b00c54d092a933", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139038161), what: "moveChunk.start", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:57:18.164+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:57:18.164+0200-59c5db9e87b00c54d092a935", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139038164), what: "moveChunk.error", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:57:18.167+0200 W SHARDING [conn3] Chunk move failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:57:18.167+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:57:18.167+0200-59c5db9e87b00c54d092a936", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139038167), what: "moveChunk.from", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, step 1 of 7: 0, step 2 of 7: 0, to: "rs1", from: "rs2", note: "aborted" } }
+2017-09-23T05:57:28.202+0200 I SHARDING [conn3] Starting chunk migration ns: DataCollector.EMessageData, [{ SiteId: MinKey }, { SiteId: 0.0 }), fromShard: rs2, toShard: rs1 with expected collection version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:28.202+0200 I SHARDING [conn3] Refreshing chunks for collection DataCollector.EMessageData based on version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:28.203+0200 I SHARDING [CatalogCacheLoader-0] Refresh for collection DataCollector.EMessageData took 0 ms and found version 1|10||59c484ea3a2462f63747e601
+2017-09-23T05:57:28.203+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:57:28.203+0200-59c5dba887b00c54d092a93e", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139048203), what: "moveChunk.start", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:57:28.206+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:57:28.206+0200-59c5dba887b00c54d092a940", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139048206), what: "moveChunk.error", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, from: "rs2", to: "rs1" } }
+2017-09-23T05:57:28.210+0200 W SHARDING [conn3] Chunk move failed :: caused by :: UnknownError: cannot start recv'ing chunk, sharding is not enabled and no config server was provided
+2017-09-23T05:57:28.210+0200 I SHARDING [conn3] about to log metadata event into changelog: { _id: "ShardServer2-2017-09-23T05:57:28.210+0200-59c5dba887b00c54d092a941", server: "ShardServer2", clientAddr: "10.63.1.107:4472", time: new Date(1506139048210), what: "moveChunk.from", ns: "DataCollector.EMessageData", details: { min: { SiteId: MinKey }, max: { SiteId: 0.0 }, step 1 of 7: 0, step 2 of 7: 0, to: "rs1", from: "rs2", note: "aborted" } }
+2017-09-23T05:57:30.213+0200 I -        [conn1] end connection 10.63.1.107:4470 (6 connections now open)
+2017-09-23T05:57:30.213+0200 I -        [conn3] end connection 10.63.1.107:4472 (5 connections now open)
+2017-09-23T05:57:39.836+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Socket hangup detected, no longer connected (idle 24 secs, remote host 10.63.1.107:27019)
+2017-09-23T05:57:42.157+0200 I -        [conn2] end connection 10.63.1.49:49250 (4 connections now open)
+2017-09-23T05:57:43.365+0200 I ASIO     [shard registry reload] dropping unhealthy pooled connection to ELVN-LAP02:27019
+2017-09-23T05:57:43.365+0200 I ASIO     [shard registry reload] after drop, pool was empty, going to spawn some connections
+2017-09-23T05:57:43.365+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:57:43.373+0200 I ASIO     [NetworkInterfaceASIO-ShardRegistry-0] Connecting to ELVN-LAP02:27019
+2017-09-23T05:57:44.837+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 10.63.1.107:27019 after 5000ms milliseconds, giving up.
+2017-09-23T05:57:44.837+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Marking host ELVN-LAP02:27019 as failed :: caused by :: Location40356: connection pool: connect failed ELVN-LAP02:27019 : couldn't connect to server ELVN-LAP02:27019, connection attempt failed
+2017-09-23T05:57:44.837+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] No primary detected for set rs1
+2017-09-23T05:57:44.837+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] All nodes for set rs1 are down. This has happened for 1 checks in a row.
+2017-09-23T05:57:49.088+0200 I -        [conn4] end connection 10.63.1.49:49255 (3 connections now open)
+2017-09-23T05:57:51.598+0200 I -        [conn5] end connection 10.63.1.75:49246 (2 connections now open)
+2017-09-23T05:57:54.566+0200 I CONTROL  [serviceShutdown] got SERVICE_CONTROL_STOP request from Windows Service Control Manager, will terminate after current cmd ends
+2017-09-23T05:57:54.566+0200 I NETWORK  [serviceShutdown] shutdown: going to close listening sockets...
+2017-09-23T05:57:54.566+0200 I NETWORK  [serviceShutdown] closing listening socket: 368
+2017-09-23T05:57:54.566+0200 I NETWORK  [serviceShutdown] shutdown: going to flush diaglog...
+2017-09-23T05:57:54.566+0200 I REPL     [serviceShutdown] shutting down replication subsystems
+2017-09-23T05:57:54.566+0200 I REPL     [serviceShutdown] Stopping replication reporter thread
+2017-09-23T05:57:54.567+0200 I REPL     [serviceShutdown] Stopping replication fetcher thread
+2017-09-23T05:57:54.567+0200 I REPL     [serviceShutdown] Stopping replication applier thread
+2017-09-23T05:57:54.603+0200 I REPL     [serviceShutdown] Stopping replication storage threads
+2017-09-23T05:58:03.366+0200 I SHARDING [shard registry reload] Operation timed out  :: caused by :: ExceededTimeLimit: Couldn't get a connection within the time limit
+2017-09-23T05:58:03.366+0200 I SHARDING [shard registry reload] Periodic reload of shard registry failed  :: caused by :: 50 could not get updated shard list from config server due to Couldn't get a connection within the time limit; will retry after 30s
+2017-09-23T05:58:03.367+0200 I FTDC     [serviceShutdown] Shutting down full-time diagnostic data capture
+2017-09-23T05:58:03.369+0200 W SHARDING [replSetDistLockPinger] pinging failed for distributed lock pinger :: caused by :: CallbackCanceled: Callback canceled
+2017-09-23T05:58:03.370+0200 W SHARDING [serviceShutdown] error encountered while cleaning up distributed ping entry for ShardServer2:27018:1506138964:-3021517119033953656 :: caused by :: InterruptedAtShutdown: interrupted at shutdown
+2017-09-23T05:58:03.370+0200 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
+2017-09-23T05:58:03.445+0200 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
+2017-09-23T05:58:03.445+0200 I CONTROL  [serviceShutdown] now exiting
